@@ -1,0 +1,55 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  MSG001: "Welcome"
+  MSG002: 'This is the page management system where you can control the pages of your blog. Make the most of it and for free'
+  LBL001: 'Test'
+  LBL002: 'Main'
+  LBL003: 'To manage'
+  LBL004: 'Title'
+  LBL005: 'Description'
+  LBL006: 'Body'
+  LBL007: 'Author'
+  LBL008: 'Save'
+  LBL009: 'come back'
+  LBL010: 'To view'
+  LBL011: 'All rights reserved'
+  LBL012: 'Create new page'
+  LBL013: 'Actions'
+  LBL014: 'Visualize'
+  LBL015: 'Edit'
+  LBL016: 'Delete'
+  LBL017: 'No records found'
+  LBL018: 'Are you sure you want to delete this record?'
+  LBL019: 'Cancel'
+  LBL020: 'Yes'
+  LBL021: 'Confirmation'

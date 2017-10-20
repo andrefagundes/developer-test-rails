@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="span4 offset2 well">
+      <p>
+        <b><%= t('LBL004') %></b>
+        <%= @pagina.title %>
+      </p>
+
+      <p>
+        <b><%= t('LBL005') %></b>
+        <%= @pagina.description %>
+      </p>
+      <p>
+        <b><%= t('LBL006') %></b>
+        <%= @pagina.body %>
+      </p>
+      <p>
+        <b><%= t('LBL007') %></b>
+        <%= @pagina.author %>
+      </p>
+
+      <%= link_to t('LBL015'), edit_pagina_path(I18n.locale) %> |
+      <%= link_to t('LBL009'), paginas_path(I18n.locale) %>
+    </div>
+  </div>
+</div>

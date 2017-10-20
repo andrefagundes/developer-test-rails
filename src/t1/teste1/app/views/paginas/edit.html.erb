@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="span6 offset2 well">
+      <h3><%= t('LBL015') %></h3>
+
+      <%= render 'form' %>
+
+      <%= link_to t('LBL010'), pagina_path(I18n.locale,@pagina) %> |
+      <%= link_to t('LBL009'), paginas_path(I18n.locale) %>
+    </div>
+  </div>
+</div>

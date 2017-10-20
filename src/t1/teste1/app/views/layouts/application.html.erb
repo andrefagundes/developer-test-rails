@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : t('LBL001') %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    controller_name , :media => "all", 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    "bootstrap_and_overrides", :media => "all", 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag controller_name, 'data-turbolinks-track': 'reload'  %>
+  </head>
+
+  <body>
+  <header class="navbar navbar-fixed-top">
+      <nav class="navbar-inner">
+        <div class="container-fluid">
+          <%= render 'layouts/navigation' %>
+        </div>
+      </nav>
+    </header>
+    <div id="main" role="main">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <%= render 'layouts/messages' %>
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
